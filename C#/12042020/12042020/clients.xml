@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE clients [<!ENTITY hello "Привіт з Ощад! ">]>
+<clients>
+  <client>
+    <!--Коментар-->
+    <pib>
+      <fname>&hello; Ivan</fname>
+      <lname>Ivanenko</lname>
+    </pib>
+    <suma></suma>
+    <address country="Україна" region="Житомирська область">Житомир</address>
+    <birthday>15.05.1978</birthday>
+  </client>
+  <client>
+    <!--Коментар-->
+    <pib>
+      <fname>&hello; Petro</fname>
+      <lname>Petrenko</lname>
+    </pib>
+    <suma></suma>
+    <address country="Україна" region="Житомирська область">Житомир</address>
+    <birthday>15.05.1978</birthday>
+  </client>
+</clients>

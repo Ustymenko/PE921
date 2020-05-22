@@ -1,0 +1,29 @@
+﻿#include <iostream>
+#include <tchar.h>
+#include <Windows.h>
+#include <string.h> //wchar.h
+using namespace std;
+void test1()
+{
+    //ansi
+    char yes = 'y';
+    char name[10] = "Petro";
+    cout << "yes  = >"<< yes<<endl;
+    cout << "name = >"<< name <<endl;
+    //unicode
+    wchar_t no = 'n';
+    wchar_t LastName[50] = L"Petenko ЯІЄЇЙ";
+    wchar_t FirstName[50] = L"Hello 事奉聖禮釋義s";
+    wstring LFN = TEXT("Hello 事奉聖禮釋義s");
+
+    //universal
+    TCHAR ch = 'r';
+    TCHAR User[10] = _T("Текст тут");
+
+    cout << wcslen(LastName) << endl;
+}
+int main()
+{
+    test1();
+    
+}
