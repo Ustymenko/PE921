@@ -43,7 +43,8 @@ namespace _25052020
 
         private void uaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (menuStrip1.Visible) {
+            if (menuStrip1.Visible)
+            {
 
                 menuStrip1.Hide();
                 menuStrip3.Show();
@@ -73,8 +74,8 @@ namespace _25052020
             main.Items.Add("Edit");
             ToolStripMenuItem edit = main.Items
                 .OfType<ToolStripMenuItem>()
-                .Where(x=>x.Text== "Edit")
-                .FirstOrDefault();            
+                .Where(x => x.Text == "Edit")
+                .FirstOrDefault();
             {
                 edit.DropDownItems.Add("Cut");
                 edit.DropDownItems.Add(new ToolStripSeparator());
@@ -95,6 +96,71 @@ namespace _25052020
         private void colorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Text = "Color";
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Text = "StripButton1";
+        }
+
+        private void toolStripSplitButton1_ButtonClick(object sender, EventArgs e)
+        {
+            Text = "StripSplitButton1";
+        }
+
+        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        {
+            Text = "toolStripDropDownButton1";
+        }
+
+        int i = 1;
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TabPage newpage = new TabPage("New file" + i++);
+            tabControl1.TabPages.Add(newpage);
+            TextBox tb = new TextBox
+            {
+                Dock = DockStyle.Fill,
+                ScrollBars = ScrollBars.Both,
+                Multiline = true,
+            };
+            tb.TextChanged += textBox_TextChanged;
+            newpage.Controls.Add(tb);
+
+            tabControl1.SelectedTab = newpage;
+        }
+
+        private void closeActivitiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex != -1)
+            {
+                TextBox tb = tabControl1.SelectedTab.Controls.OfType<TextBox>().FirstOrDefault();
+                if (tb != null)
+                {
+
+                    if (tb.Tag is bool fl && fl)
+                    {
+                        Text = "Змінено";
+                    }
+                    else
+                    {
+
+                        tabControl1.TabPages.RemoveAt(tabControl1.SelectedIndex);
+
+                    }
+
+                }
+
+
+            }
+        }
+        private void textBox_TextChanged(object sender, EventArgs e)
+        {
+            if (sender is TextBox tb)
+            {
+                tb.Tag = true;
+            }
+
         }
     }
 }
