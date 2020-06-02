@@ -68,6 +68,12 @@ namespace _02062020
             //{
             //    ActiveMdiChild.Close();
             //}
+            foreach (var childForm in this.MdiChildren)
+            {
+                childForm.Close();
+            }
+           
+
 
 
         }
