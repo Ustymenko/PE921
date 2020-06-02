@@ -31,7 +31,7 @@ namespace _02062020
         {
             richTextBox1.Text = "Несе Галя воду\nКоромисло гнеться\n";
             richTextBox1.AppendText("Line 2" + System.Environment.NewLine);
-            richTextBox1.AppendText("В одной из прошлых заметок я писал о том, что изменяемые значимые типы являются достаточно опасным инструментом, который в неумелых руках может привести к неожиданному поведению и трудноуловимым ошибкам. В общем, дело это хорошее, но опасное; а сегодня будет еще пара примеров, подтверждающих все эти мысли." + System.Environment.NewLine);
+            richTextBox1.AppendText("В одной из прошлых заметок Галя писала о том, что изменяемые значимые типы являются достаточно опасным инструментом, который в неумелых руках может привести к неожиданному поведению и трудноуловимым ошибкам. В общем, дело это хорошее, но опасное; а сегодня будет еще пара примеров, подтверждающих все эти мысли." + System.Environment.NewLine);
 
         }
 
@@ -81,6 +81,24 @@ namespace _02062020
         private void rightToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
+        private void marginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.SelectionIndent = 120;
+            richTextBox1.SelectionHangingIndent = -20;
+            richTextBox1.SelectionRightIndent = 100;
+        }
+
+        private void findToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // int index=richTextBox1.Find("галя");
+           // int index=richTextBox1.Find("галя", RichTextBoxFinds.None);
+           // int index=richTextBox1.Find("галя", RichTextBoxFinds.MatchCase);
+            int index=richTextBox1.Find("Галя",50, RichTextBoxFinds.MatchCase);
+            Text = "" + index;
+            richTextBox1.Focus();
+
 
         }
     }

@@ -44,6 +44,8 @@
             this.leftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.centerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -153,7 +155,9 @@
             this.alignmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.leftToolStripMenuItem,
             this.centerToolStripMenuItem,
-            this.rightToolStripMenuItem});
+            this.rightToolStripMenuItem,
+            this.marginToolStripMenuItem,
+            this.findToolStripMenuItem});
             this.alignmentToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.MatchOnly;
             this.alignmentToolStripMenuItem.Name = "alignmentToolStripMenuItem";
             this.alignmentToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
@@ -179,6 +183,20 @@
             this.rightToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rightToolStripMenuItem.Text = "Right";
             this.rightToolStripMenuItem.Click += new System.EventHandler(this.rightToolStripMenuItem_Click);
+            // 
+            // marginToolStripMenuItem
+            // 
+            this.marginToolStripMenuItem.Name = "marginToolStripMenuItem";
+            this.marginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marginToolStripMenuItem.Text = "Margin";
+            this.marginToolStripMenuItem.Click += new System.EventHandler(this.marginToolStripMenuItem_Click);
+            // 
+            // findToolStripMenuItem
+            // 
+            this.findToolStripMenuItem.Name = "findToolStripMenuItem";
+            this.findToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.findToolStripMenuItem.Text = "Find";
+            this.findToolStripMenuItem.Click += new System.EventHandler(this.findToolStripMenuItem_Click);
             // 
             // ChildForm
             // 
@@ -215,5 +233,7 @@
         private System.Windows.Forms.ToolStripMenuItem leftToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem centerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem findToolStripMenuItem;
     }
 }
