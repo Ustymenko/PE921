@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03062020", "03062020\03062020.csproj", "{C22ECBA0-CA5C-45FF-B60C-0E073139C877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03062020Photo", "03062020Photo\03062020Photo.csproj", "{1C493C8C-7F7F-4AEF-9A72-D022879DA66A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintForm", "PaintForm\PaintForm.csproj", "{450EC58C-E10F-42D5-B0E0-E1FB20A13FB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C22ECBA0-CA5C-45FF-B60C-0E073139C877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22ECBA0-CA5C-45FF-B60C-0E073139C877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22ECBA0-CA5C-45FF-B60C-0E073139C877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22ECBA0-CA5C-45FF-B60C-0E073139C877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C493C8C-7F7F-4AEF-9A72-D022879DA66A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C493C8C-7F7F-4AEF-9A72-D022879DA66A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C493C8C-7F7F-4AEF-9A72-D022879DA66A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C493C8C-7F7F-4AEF-9A72-D022879DA66A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450EC58C-E10F-42D5-B0E0-E1FB20A13FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450EC58C-E10F-42D5-B0E0-E1FB20A13FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450EC58C-E10F-42D5-B0E0-E1FB20A13FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450EC58C-E10F-42D5-B0E0-E1FB20A13FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1603F500-2CFE-469C-A50E-027ACB38D409}
+	EndGlobalSection
+EndGlobal
